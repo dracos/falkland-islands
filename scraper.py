@@ -82,6 +82,12 @@ terms = [
         'start_date': '1981-10-01',
         'source': 'https://en.wikipedia.org/wiki/Falkland_Islands_general_election,_1981',
     },
+    {
+        'id': 1977,
+        'name': '1977 election',
+        'start_date': '1977-10-06',
+        'source': 'https://en.wikipedia.org/wiki/Falkland_Islands_general_election,_1977',
+    },
 ]
 
 scraperwiki.sqlite.save(['id'], terms, 'terms')
