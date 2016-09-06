@@ -13,8 +13,8 @@ def scrape_term(t):
         tds = a.xpath('ancestor::tr/td')
         area = a.xpath('ancestor::table//th[@colspan="6"]/a//text()')[0]
         area = area.replace(' result', '')
-        who = tds[1].text_content().strip()
-        wikiname = tds[1].xpath('.//a')[0].get('title')
+        who = tds[2].text_content().strip()
+        wikiname = tds[2].xpath('.//a')[0].get('title')
         data = {
             'name': who,
             'wikiname': wikiname,
